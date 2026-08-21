@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #topdiv{
+            border: 10px solid purple;
+            padding: 10px;
+            width: 0 auto;
+            text-align: center;
+            margin: 10px;
+        }
+
+        #middiv{
+            border: 10px solid red;
+            padding: 10px;
+            width: 0 auto;
+            text-align: center;
+            margin: 10px;
+        }
+
+        #innerdiv{
+            border: 10px solid green;
+            padding: 10px;
+            width: 0 auto;
+            text-align: center;
+            margin: 10px;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="topdiv">Outer Div
+      <div id="middiv">Mid Div
+        <div id="innerdiv">
+         InnerDiv
+        </div>
+      </div>
+    </div>
+
+    <script>
+       
+       document.getElementById("topdiv").addEventListener("click", () => {
+        console.log("topdiv clicked");
+       }, true)
+
+       document.getElementById("middiv").addEventListener("click", () => {
+        console.log("middiv clicked");
+       }, true)
+
+       document.getElementById("innerdiv").addEventListener("click", () => {
+        console.log("innerdiv clicked");
+       }, true)
+
+       
+    </script>
+  </body>
+</html>

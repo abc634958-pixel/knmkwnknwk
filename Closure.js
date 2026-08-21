@@ -1,0 +1,4 @@
+function outerFunction() {
+    function innerFunction() {}
+    
+}
